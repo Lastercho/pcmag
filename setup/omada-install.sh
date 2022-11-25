@@ -70,8 +70,8 @@ sudo dpkg -i mongodb-org-server_3.6.23_amd64.deb &>/dev/null
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Omada Controller"
-wget -qL https://download.tplinkcloud.com/firmware/omada_v5.6.3_linux_x64_20220921083148_1666595513596.deb
-sudo dpkg -i omada_v5.6.3_linux_x64_20220921083148_1666595513596.deb &>/dev/null
+wget -qL https://static.tp-link.com/upload/software/2022/202211/20221121/Omada_SDN_Controller_v5.7.4_Linux_x64.deb
+sudo dpkg -i Omada_SDN_Controller_v5.7.4_Linux_x64.deb &>/dev/null
 msg_ok "Installed Omada Controller"
 
 PASS=$(grep -w "root" /etc/shadow | cut -b6);
